@@ -1,0 +1,25 @@
+# Pipeline do GitHub Actions
+name: Pipeline da Calculadora Simples
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do codigo
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar pytest
+        run: pip install pytest
+
+      - name: Executar testes automatizados
+        run: pytest
