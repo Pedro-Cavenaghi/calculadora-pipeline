@@ -6,17 +6,23 @@ on:
       - main
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  qualidade:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: ['3.10', '3.11', '3.12']
+
+    runs-on: ${{ matrix.os }}
 
     steps:
-      - name: Checkout código
-        uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Configurar Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'
 
       - name: Instalar dependências
         run: |
