@@ -1,8 +1,8 @@
 # 🧮 Calculadora Pipeline — CI/CD & DevSecOps
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/SEU_USUARIO/calculadora-pipeline/pipeline.yml?branch=main&label=CI%2FCD%20Pipeline&logo=github)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Pedro-Cavenaghi/calculadora-pipeline/pipeline.yml?branch=main&label=CI%2FCD%20Pipeline&logo=github)
 ![Dependabot](https://img.shields.io/badge/Dependabot-active-brightgreen?logo=dependabot)
-![SonarCloud Quality Gate](https://img.shields.io/sonar/quality_gate/SEU_USUARIO_calculadora-pipeline?server=https%3A%2F%2Fsonarcloud.io&logo=sonarcloud)
+![SonarCloud Quality Gate](https://img.shields.io/sonar/quality_gate/Pedro-Cavenaghi_calculadora-pipeline?server=https%3A%2F%2Fsonarcloud.io&logo=sonarcloud)
 
 Projeto acadêmico focado na implementação de uma esteira completa de **CI/CD e DevSecOps** utilizando Python, GitHub Actions, Dependabot e SonarCloud.
 
