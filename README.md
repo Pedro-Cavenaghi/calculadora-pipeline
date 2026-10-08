@@ -12,7 +12,7 @@ Projeto acadêmico focado na implementação de uma esteira completa de **CI/CD 
 
 A automação do repositório conta com três pilares principais de integração e entrega contínua:
 
-### 1. Testes Automatizados em Matriz (GitHub Actions)
+### 1. Testes Automatizados em Matrix (GitHub Actions)
 * **Estrutura:** Execução paralela em **3 Sistemas Operacionais** (`ubuntu-latest`, `windows-latest`, `macos-latest`) e **3 Versões do Python** (`3.10`, `3.11`, `3.12`), totalizando 9 combinações de ambiente.
 * **Cobertura:** Execução de testes unitários via `pytest` com geração de relatórios de cobertura (`pytest-cov`).
 
